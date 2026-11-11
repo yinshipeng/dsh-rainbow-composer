@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Rainbow composer border">
+  <defs>
+    <linearGradient id="rainbow" x1="10" y1="52" x2="54" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4fe0b4"/>
+      <stop offset=".2" stop-color="#45d4ea"/>
+      <stop offset=".42" stop-color="#8299ff"/>
+      <stop offset=".6" stop-color="#df85ff"/>
+      <stop offset=".78" stop-color="#fb6f86"/>
+      <stop offset="1" stop-color="#fbb32a"/>
+    </linearGradient>
+    <filter id="halo" x="-25%" y="-45%" width="150%" height="190%">
+      <feGaussianBlur stdDeviation="3.4"/>
+    </filter>
+  </defs>
+  <rect x="10" y="21" width="44" height="26" rx="8.5" fill="none" stroke="url(#rainbow)"
+        stroke-width="3.2" opacity=".55" filter="url(#halo)"/>
+  <rect x="10" y="21" width="44" height="26" rx="8.5" fill="none" stroke="url(#rainbow)" stroke-width="2.6"/>
+  <path d="M19 31h13M19 38h21" stroke="#111827" stroke-opacity=".32" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="45.5" cy="38" r="4.2" fill="url(#rainbow)" opacity=".85"/>
+</svg>

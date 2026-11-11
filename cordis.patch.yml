@@ -1,0 +1,6 @@
+# dsh-rainbow-composer bundle patch: inserts one row into the profile roster.
+# The row is a no-op Host plugin; all behavior lives in the browser half
+# declared by `dsh.client` in package.json.
+- insert:
+    - id: rainbow-composer
+      name: dsh-rainbow-composer

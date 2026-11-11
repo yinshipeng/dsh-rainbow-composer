@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Rainbow composer border",
+    "description": "Paints a slowly flowing rainbow gradient border around the message composer. Pure CSS, no image assets, works in light and dark themes."
+  }
+}

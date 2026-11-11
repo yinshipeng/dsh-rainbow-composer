@@ -1,0 +1,65 @@
+{
+  "name": "dsh-rainbow-composer",
+  "version": "1.0.0",
+  "description": "Paints a flowing rainbow gradient border around the DSH message composer.",
+  "type": "module",
+  "license": "MIT",
+  "author": "yinshipeng <yinshipeng@126.com>",
+  "homepage": "https://github.com/yinshipeng/dsh-rainbow-composer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinshipeng/dsh-rainbow-composer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yinshipeng/dsh-rainbow-composer/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "appearance",
+    "theme",
+    "rainbow",
+    "composer",
+    "border",
+    "css"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs",
+    "check": "node --check index.js && node --check client.js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.2-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
